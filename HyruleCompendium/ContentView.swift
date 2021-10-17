@@ -8,9 +8,14 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @ObservedObject var networkingManager = HyruleService()
+
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        Button("Tap me") {
+            print(networkingManager.monsters.data.count)
+        }
+        
     }
 }
 

@@ -11,6 +11,7 @@
 		782B0C8F271C4DE400D83567 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782B0C8E271C4DE400D83567 /* ContentView.swift */; };
 		782B0C91271C4DE600D83567 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 782B0C90271C4DE600D83567 /* Assets.xcassets */; };
 		782B0C94271C4DE600D83567 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 782B0C93271C4DE600D83567 /* Preview Assets.xcassets */; };
+		782B0C9B271C4E1C00D83567 /* NetworkingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782B0C9A271C4E1C00D83567 /* NetworkingService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		782B0C8E271C4DE400D83567 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		782B0C90271C4DE600D83567 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		782B0C93271C4DE600D83567 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		782B0C9A271C4E1C00D83567 /* NetworkingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				782B0C8C271C4DE400D83567 /* HyruleCompendiumApp.swift */,
 				782B0C8E271C4DE400D83567 /* ContentView.swift */,
+				782B0C9A271C4E1C00D83567 /* NetworkingService.swift */,
 				782B0C90271C4DE600D83567 /* Assets.xcassets */,
 				782B0C92271C4DE600D83567 /* Preview Content */,
 			);
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				782B0C9B271C4E1C00D83567 /* NetworkingService.swift in Sources */,
 				782B0C8F271C4DE400D83567 /* ContentView.swift in Sources */,
 				782B0C8D271C4DE400D83567 /* HyruleCompendiumApp.swift in Sources */,
 			);
