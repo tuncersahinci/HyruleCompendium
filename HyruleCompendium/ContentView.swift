@@ -6,16 +6,29 @@
 //
 
 import SwiftUI
+import SDWebImageSwiftUI
 
 struct ContentView: View {
     
     @ObservedObject var networkingManager = HyruleService()
 
     var body: some View {
-        Button("Tap me") {
-            print(networkingManager.monsters.data.count)
+        VStack{
+            List(networkingManager.results, id: \.id) { monster in
+                HStack {
+                    WebImage(url: URL(string: monster.image))
+                        .resizable()
+                        .clipShape(Circle())
+                        .scaledToFit()
+                        .frame(width: 50, height: 50)
+                    Text(monster.name.capitalized)
+                }
+                    
+                
+            }
+        }.onAppear{
+            networkingManager.fetchData()
         }
-        
     }
 }
 

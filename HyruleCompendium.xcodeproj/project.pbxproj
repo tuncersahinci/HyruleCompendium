@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7827A6F0271CD83B00B37767 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 7827A6EF271CD83B00B37767 /* SDWebImageSwiftUI */; };
 		782B0C8D271C4DE400D83567 /* HyruleCompendiumApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782B0C8C271C4DE400D83567 /* HyruleCompendiumApp.swift */; };
 		782B0C8F271C4DE400D83567 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782B0C8E271C4DE400D83567 /* ContentView.swift */; };
 		782B0C91271C4DE600D83567 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 782B0C90271C4DE600D83567 /* Assets.xcassets */; };
@@ -28,6 +29,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7827A6F0271CD83B00B37767 /* SDWebImageSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +88,9 @@
 			dependencies = (
 			);
 			name = HyruleCompendium;
+			packageProductDependencies = (
+				7827A6EF271CD83B00B37767 /* SDWebImageSwiftUI */,
+			);
 			productName = HyruleCompendium;
 			productReference = 782B0C89271C4DE400D83567 /* HyruleCompendium.app */;
 			productType = "com.apple.product-type.application";
@@ -114,6 +119,9 @@
 				Base,
 			);
 			mainGroup = 782B0C80271C4DE400D83567;
+			packageReferences = (
+				7827A6EE271CD83B00B37767 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
 			productRefGroup = 782B0C8A271C4DE400D83567 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -347,6 +355,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7827A6EE271CD83B00B37767 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7827A6EF271CD83B00B37767 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7827A6EE271CD83B00B37767 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 782B0C81271C4DE400D83567 /* Project object */;
 }
