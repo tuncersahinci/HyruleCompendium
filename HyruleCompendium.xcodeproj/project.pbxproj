@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7827A6F0271CD83B00B37767 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 7827A6EF271CD83B00B37767 /* SDWebImageSwiftUI */; };
+		7827A6F2271DCFD000B37767 /* MonsterDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7827A6F1271DCFD000B37767 /* MonsterDetailView.swift */; };
 		782B0C8D271C4DE400D83567 /* HyruleCompendiumApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782B0C8C271C4DE400D83567 /* HyruleCompendiumApp.swift */; };
 		782B0C8F271C4DE400D83567 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782B0C8E271C4DE400D83567 /* ContentView.swift */; };
 		782B0C91271C4DE600D83567 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 782B0C90271C4DE600D83567 /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7827A6F1271DCFD000B37767 /* MonsterDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonsterDetailView.swift; sourceTree = "<group>"; };
 		782B0C89271C4DE400D83567 /* HyruleCompendium.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HyruleCompendium.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		782B0C8C271C4DE400D83567 /* HyruleCompendiumApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HyruleCompendiumApp.swift; sourceTree = "<group>"; };
 		782B0C8E271C4DE400D83567 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -57,6 +59,7 @@
 			children = (
 				782B0C8C271C4DE400D83567 /* HyruleCompendiumApp.swift */,
 				782B0C8E271C4DE400D83567 /* ContentView.swift */,
+				7827A6F1271DCFD000B37767 /* MonsterDetailView.swift */,
 				782B0C9A271C4E1C00D83567 /* NetworkingService.swift */,
 				782B0C90271C4DE600D83567 /* Assets.xcassets */,
 				782B0C92271C4DE600D83567 /* Preview Content */,
@@ -148,6 +151,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7827A6F2271DCFD000B37767 /* MonsterDetailView.swift in Sources */,
 				782B0C9B271C4E1C00D83567 /* NetworkingService.swift in Sources */,
 				782B0C8F271C4DE400D83567 /* ContentView.swift in Sources */,
 				782B0C8D271C4DE400D83567 /* HyruleCompendiumApp.swift in Sources */,
@@ -289,7 +293,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -319,7 +323,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
