@@ -14,23 +14,50 @@ struct MonsterDetailView: View {
     
     let monster: Result
     
+    
     var body: some View {
-
-            VStack{
-                WebImage(url: URL(string: monster.image))
-                    .clipShape(RoundedRectangle(cornerRadius: 25.0))
-                
-                
-                Text(monster.datumDescription)
-                    .frame(width: 350, height: 200, alignment: .leading)
-                    .font(.system(size: 16))
-                
-                Spacer()
-                
-                
-                    
-            }.navigationBarTitle(monster.name.capitalized)
         
+        VStack{
+            WebImage(url: URL(string: monster.image))
+                .clipShape(RoundedRectangle(cornerRadius: 25.0))
+            
+            
+            Text(monster.datumDescription)
+                .frame(width: 350, height: 200, alignment: .leading)
+                .font(.system(size: 16))
+            
+            VStack(spacing: 20){
+                VStack{
+                    Text("Common Locations")
+                        .font(.headline)
+                    if let unwrappedLocations = monster.commonLocations {
+                        if unwrappedLocations.count > 0 {
+                            ForEach(0..<unwrappedLocations.count, id: \.self) { index in
+                                Text(unwrappedLocations[index].capitalized)
+                            }
+                        } else {
+                            Text("Unknown")
+                        }
+                    }
+                }
+                
+                VStack{
+                    Text("Drops")
+                        .font(.headline)
+                    if let unwrappedDrops = monster.drops {
+                        if unwrappedDrops.count > 0 {
+                            ForEach(0..<unwrappedDrops.count, id: \.self) { index in
+                                Text(unwrappedDrops[index].capitalized)
+                            }
+                        } else {
+                            Text("Unknown")
+                        }
+                        
+                    }
+                }
+            }
+            
+        }.navigationBarTitle(monster.name.capitalized)
         
     }
 }
